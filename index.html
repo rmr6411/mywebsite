@@ -1,10 +1,382 @@
-<!doctype html>
-<html>
-<head>TESTING 123!
-<meta charset="utf-8">
-<title>index.html</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ryan Raymond Portfolio – Student Developer [&] Future Cyber Pro</title>
+  <meta name="description" content="Portfolio of Ryan Miller, student developer and aspiring cybersecurity professional, showcasing projects, skills, and experience.">
+  <meta name="author" content="Ryan Raymond">
+  <meta name="keywords" content="Ryan Raymond, portfolio, student developer, cybersecurity, projects, HTML5">
+
+  <style>
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.5; margin: 0; padding: 0; }
+    header, nav, main, footer, section, article, aside { padding: 1rem; }
+    header, footer { background-color: #0f172a; color: #f9fafb; }
+    nav { background-color: #111827; }
+    nav a { color: #e5e7eb; margin-right: 1rem; text-decoration: none; }
+    nav a:focus, nav a:hover { text-decoration: underline; }
+    .layout { display: flex; flex-wrap: wrap; gap: 1rem; }
+    main { flex: 3 1 60%; }
+    aside { flex: 1 1 30%; background-color: #f3f4f6; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #d1d5db; padding: 0.5rem; text-align: left; }
+    th { background-color: #e5e7eb; }
+    figure { margin: 0; }
+    .visually-hidden { position: absolute; left: -9999px; }
+  </style>
 </head>
-My Testing 123
 <body>
+  <!-- ===================== HEADER ===================== -->
+  <header>
+    <h1 id="top">Ryan Raymond</h1>
+    <div class="layout" style="align-items:center;">
+      <figure>
+        <!-- Example placeholder image URL; replace with your own file path -->
+        <img src="images/ryan-profile.jpg"
+             alt="Professional headshot of Ryan Raymond smiling in a Guitar Center"
+             width="160" height="160">
+        <figcaption>Ryan Raymond – student developer [&] aspiring cybersecurity analyst.</figcaption>
+      </figure>
+      <p>
+        <strong>Student developer</strong> and <em>future cybersecurity professional</em> based in the
+        Lehigh Valley, PA. I love turning complex and unpredictable systems into clear, consise, reliable solutions and
+        helping others understand how to use technology properly.
+      </p>
+    </div>
+  </header>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav aria-label="Primary site navigation">
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills [&] Timeline</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="layout">
+    <!-- ===================== MAIN CONTENT ===================== -->
+    <main>
+      <!-- ========== ABOUT SECTION ========== -->
+      <section id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About Me</h2>
+
+        <article aria-labelledby="bio-heading">
+          <h3 id="bio-heading">Short Bio</h3>
+          <p>
+            I am a full-time student at <abbr title="Pennsylvania State University">Penn State</abbr>
+            and a part-time dealer warhouse associate, where I coordinate logistics, building pallette orders,and timing.
+            That experience shifted my attention to better detail and my love of configuring systems that work.
+          </p>
+          <p>
+            My long-term goal is to work in <mark>digital forensics and cybersecurity</mark>, being a data penetration tester,and using the tools and processes to help keep people and organizations safe from threats. I enjoy combining
+            <em>comprehensive thinking</em> with clear and percise communication during the debugging process in a network 
+            or explaining a concept to classmates.
+          </p>
+          <p>
+          </p>
+          <blockquote cite="https://www.psu.edu">
+          </blockquote>
+        </article>
+
+        <article aria-labelledby="education-heading">
+          <h3 id="education-heading">Education [&] Key Dates</h3>
+          <p>
+            I am currently pursuing coursework in networking, programming, and cybersecurity. One milestone
+            I’m proud of is completing my first of many camera installation jobs and running cables to the internet device hub in New Jersey, and making sure that all cameras work properly.
+            <time datetime="2023-04-15">April 15, 2023</time>, where I integrated a front-end interface
+            with a secure back-end API.
+          </p>
+          <p>
+            I recently have been exploring topics such as <code>TCP/IP</code>, <code>Linux</code> administration,
+            and <code>Java</code> application design. When I’m not coding, I’m usually playing guitar
+            or piano, or analyzing how everyday systems—like traffic patterns or campus Wi‑Fi actually run.
+          </p>
+        </article>
+      </section>
+
+      <!-- ========== SKILLS & TABLE SECTION ========== -->
+      <section id="skills" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Skills [&] Experience Snapshot</h2>
+
+        <article aria-labelledby="skills-list-heading">
+          <h3 id="skills-list-heading">Core Technical Skills</h3>
+          <p>Here are some of the areas where I’m currently focusing my growth:</p>
+          <ul>
+            <li><strong>Programming:</strong> <code>Java</code>, basic <code>Python</code>, and scripting.</li>
+            <li><strong>Networking:</strong> IP addressing, routing concepts, and troubleshooting.</li>
+            <li><strong>Systems:</strong> <code>Linux</code> command line, file systems, and permissions.</li>
+            <li><strong>Security:</strong> introductory digital forensics and log analysis.</li>
+          </ul>
+
+          <p>
+            I like to think of my learning curve as an exponential function:
+            \( 2<sup>n</sup> \) growth in understanding as I revisit concepts over time.
+          </p>
+          <p>
+            Even small improvements—like shaving 100 ms off a response time—matter when you repeat them
+            across 10<sup>6</sup> requests.
+          </p>
+        </article>
+
+        <article aria-labelledby="skills-table-heading">
+          <h3 id="skills-table-heading">Skills [&] Proficiency Table</h3>
+          <table>
+            <caption>Overview of my current skills and self-assessed proficiency levels.</caption>
+            <thead>
+              <tr>
+                <th scope="col">Skill Area</th>
+                <th scope="col">Focus Topic</th>
+                <th scope="col">Proficiency (1–5)</th>
+                <th scope="col">Using Since</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Programming</th>
+                <td>Java &amp; object-oriented design</td>
+                <td>4</td>
+                <td><time datetime="2022-09">Fall 2022</time></td>
+              </tr>
+              <tr>
+                <th scope="row">Networking</th>
+                <td>Subnetting &amp; routing</td>
+                <td>5</td>
+                <td><time datetime="2023-01">Spring 2023</time></td>
+              </tr>
+              <tr>
+                <th scope="row">Systems</th>
+                <td>Linux administration</td>
+                <td>4.5</td>
+                <td><time datetime="2023-08">Fall 2023</time></td>
+              </tr>
+              <tr>
+                <th scope="row">Security</th>
+                <td>Digital forensics basics</td>
+                <td>3.5</td>
+                <td><time datetime="2024-01">Spring 2024</time></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="4">
+                  Note: Proficiency is self-assessed and updated every <time datetime="P6M">6 months</time>.
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </article>
+
+        <article aria-labelledby="timeline-heading">
+          <h3 id="timeline-heading">Learning Timeline (Ordered List)</h3>
+          <p>Rough sequence of how I’ve been building my technical foundation:</p>
+          <ol>
+            <li><strong>Step 1:</strong> Mastered basic programming logic and control structures.</li>
+            <li><strong>Step 2:</strong> Learned networking fundamentals and how data moves across the internet.</li>
+            <li><strong>Step 3:</strong> Dug into <code>Linux</code> and system administration tasks.</li>
+            <li><strong>Step 4:</strong> Began exploring cybersecurity and digital forensics tools.</li>
+          </ol>
+        </article>
+      </section>
+
+      <!-- ========== PROJECTS & MULTIMEDIA SECTION ========== -->
+      <section id="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Highlighted Projects</h2>
+
+        <article aria-labelledby="project1-heading">
+          <h3 id="project1-heading">Network Troubleshooting Playbook</h3>
+          <p>
+            I created a structured troubleshooting guide for common home and campus network issues.
+            It walks users through checking physical connections, verifying IP settings, and using
+            tools like <code>ping</code> and <code>traceroute</code>.
+          </p>
+
+          <details>
+            <summary>View more technical details about this project</summary>
+            <p>
+              The playbook is organized as a description list for quick reference:
+            </p>
+            <dl>
+              <dt>Layer 1</dt>
+              <dd>Check cables, Wi‑Fi signal strength, and power to devices.</dd>
+              <dt>Layer 2</dt>
+              <dd>Verify MAC addresses, switches, and basic connectivity.</dd>
+              <dt>Layer 3</dt>
+              <dd>Confirm IP addressing, gateways, and routing tables.</dd>
+            </dl>
+            <p>
+              I also included a small script that parses logs and highlights
+              <mark>repeated connection failures</mark> for faster diagnosis.
+            </p>
+          </details>
+        </article>
+
+        <article aria-labelledby="project2-heading">
+          <h3 id="project2-heading">Interactive Study Dashboard</h3>
+          <p>
+            This project is a single-page dashboard that tracks study sessions, topics, and breaks.
+            It uses semantic HTML and simple JavaScript to keep everything accessible and keyboard-friendly.
+          </p>
+
+          <figure>
+            <img src="images/study-dashboard.png"
+                 alt="Screenshot of Ryan's interactive study dashboard showing charts and timers"
+                 width="640" height="360" loading="lazy">
+            <figcaption>
+              Screenshot of my study dashboard prototype, designed with accessibility and clarity in mind.
+            </figcaption>
+          </figure>
+          <p>
+            For a longer walkthrough, I embedded a project demo video:
+          </p>
+          <iframe
+            width="560" height="315"
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="Project demo video of Ryan's study dashboard"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </article>
+      </section>
+
+      <!-- ========== CONTACT & FORM SECTION ========== -->
+      <section id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact [&] Feedback</h2>
+
+        <article aria-labelledby="contact-info-heading">
+          <h3 id="contact-info-heading">Direct Contact Information</h3>
+          <p>
+            You can reach me via email at
+            <a href="mailto:rmr6411@psu.edu">rmr6411@psu.edu</a>
+            or by phone at
+            <a href="tel:+16105551234">+1 (610) 555‑1234</a>.
+          </p>
+          <p>
+            I maintain a professional profile on
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            and share code on
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>.
+          </p>
+          <p>
+            Download a PDF copy of my resume:
+            <a href="documents/ryan-miller-resume.pdf" download="Ryan-Raymond-Resume.pdf">
+              Download Resume
+            </a>
+          </p>
+        </article>
+
+        <article aria-labelledby="form-heading">
+          <h3 id="form-heading">Send Me a Message</h3>
+          <form action="https://example.com/contact" method="post" aria-label="Contact form">
+            <fieldset>
+              <legend>Basic Information</legend>
+
+              <p>
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required
+                       autocomplete="name" placeholder="Your full name">
+              </p>
+
+              <p>
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required
+                       autocomplete="email" placeholder="you@example.com">
+              </p>
+
+              <p>
+                <label for="reason">Reason for Contact:</label><br>
+                <select id="reason" name="reason" required>
+                  <option value="">-- Please choose an option --</option>
+                  <option value="project">Project collaboration</option>
+                  <option value="opportunity">Job or internship opportunity</option>
+                  <option value="question">Question about my work</option>
+                  <option value="other">Other</option>
+                </select>
+              </p>
+            </fieldset>
+
+            <fieldset>
+              <legend>Message Details</legend>
+
+              <p>
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" rows="5" cols="40" required
+                          placeholder="Share your ideas, questions, or feedback here."></textarea>
+              </p>
+
+              <p>
+                <label for="contact-time">Preferred Contact Time:</label><br>
+                <input type="time" id="contact-time" name="contact-time">
+              </p>
+
+              <p>
+                <span id="newsletter-label">Newsletter:</span><br>
+                <input type="checkbox" id="newsletter" name="newsletter" value="yes" aria-labelledby="newsletter-label">
+                <label for="newsletter">I’d like to receive occasional updates.</label>
+              </p>
+
+              <p>
+                <label for="priority">Message Priority (1–5):</label><br>
+                <input type="number" id="priority" name="priority" min="1" max="5" value="3">
+              </p>
+            </fieldset>
+
+            <p>
+              <button type="submit">Submit Message</button>
+            </p>
+          </form>
+        </article>
+      </section>
+    </main>
+
+    <!-- ===================== ASIDE ===================== -->
+    <aside aria-label="Additional information about Ryan">
+      <h2>Quick Facts</h2>
+      <ul>
+        <li><strong>Location:</strong> Wescosville, PA</li>
+        <li><strong>Current Role:</strong> Student &amp; dealer trade driver</li>
+        <li><strong>Favorite Language:</strong> <code>Java</code> (for now!)</li>
+      </ul>
+
+      <h3>Hobbies [&] Interests</h3>
+      <ul>
+        <li>Playing guitar and piano</li>
+        <li>Building custom guitar hardware</li>
+        <li>Analyzing collectibles markets</li>
+        <li>Exploring digital forensics tools</li>
+      </ul>
+
+      <h3>Mini Glossary</h3>
+      <dl>
+        <dt><abbr title="Transmission Control Protocol / Internet Protocol">TCP/IP</abbr></dt>
+        <dd>The core suite of protocols that powers most internet communication.</dd>
+
+        <dt>Ping</dt>
+        <dd>A simple tool that measures round-trip time to another host.</dd>
+
+        <dt>Forensics Lab</dt>
+        <dd>A controlled environment for analyzing digital evidence safely and reproducibly.</dd>
+      </dl>
+
+      <p>
+        A mentor once told me,
+        <q cite="https://example.com/mentor-quote">“Document everything; your future self is your most important teammate.”</q>
+      </p>
+    </aside>
+  </div>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <p>
+      &copy; <time datetime="2025">2025</time> Ryan Raymond. All rights reserved.
+    </p>
+    <p>
+      Last updated:
+      <time datetime="2025-01-25">January 25, 2025</time>
+    </p>
+    <p>
+      This page follows modern HTML5 semantics and aims to be accessible via keyboard and screen readers.
+    </p>
+  </footer>
 </body>
 </html>
